@@ -6,6 +6,9 @@ import { ExternalLink, Github, Filter } from 'lucide-react';
 import cutePandaAi from '@/assets/cute-panda-ai.png';
 import ecommerceProject from '@/assets/ecommerce-project.png';
 import mathgptProject from '@/assets/mathgpt-project.png';
+import pdfsumm from '@/assets/pdfsummariser.png';
+import kra from '@/assets/kramig.png';
+import whatsapp from '@/assets/whatsapp.png';
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -32,7 +35,7 @@ const ProjectsSection = () => {
       title: 'Smart PDF Summarizer',
       description: 'An AI-based web application that allows users to upload long PDF documents and receive a summary along with key topics using Python, HuggingFace, StreamLit, and PyMuPDF.',
       category: 'AI/Machine Learning',
-      image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop&crop=center',
+      image: pdfsumm,
       technologies: ['Python', 'HuggingFace', 'StreamLit', 'PyMuPDF'],
       features: [
         'PDF document processing',
@@ -48,7 +51,7 @@ const ProjectsSection = () => {
       title: 'AI Chatbot for Student Assistance',
       description: 'A friendly AI chatbot web app that allows users to ask questions and receive structured, conversational responses using Python, Flask, Together AI API, HTML, CSS, JavaScript, and SQLite.',
       category: 'AI/Machine Learning',
-      image: cutePandaAi,
+      image: kra,
       technologies: ['Python', 'Flask', 'Together AI API', 'HTML', 'CSS', 'JavaScript', 'SQLite'],
       features: [
         'Natural language processing',
@@ -96,7 +99,7 @@ const ProjectsSection = () => {
       title: 'WhatsApp Chat Analyzer',
       description: 'A web application built with HTML, CSS, and JavaScript that analyzes WhatsApp chat exports to provide insights and statistics about conversations.',
       category: 'Front End Development',
-      image: 'https://images.unsplash.com/photo-1611746872915-64382b5c76da?w=400&h=300&fit=crop&crop=center',
+      image: whatsapp,
       technologies: ['HTML', 'CSS', 'JavaScript'],
       features: [
         'Chat export processing',

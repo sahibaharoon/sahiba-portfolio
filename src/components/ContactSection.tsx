@@ -6,6 +6,7 @@ import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
 import { Mail, Phone, MapPin, Send, Instagram, Linkedin, Github } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import sahiba from '@/assets/sahiba.jpeg';
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -49,81 +50,15 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <Card className="wave-glow">
-              <CardHeader>
-                <CardTitle className="text-2xl text-gradient-ocean">Let's Connect</CardTitle>
-                <p className="text-muted-foreground">
-                  Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                  I'd love to hear from you! 🏖️
-                </p>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                {/* Contact Methods */}
-                <div className="space-y-4">
-                  <a 
-                    href="mailto:sahibaharoon.mec@gmail.com"
-                    className="flex items-center p-4 bg-secondary/50 rounded-lg hover:bg-primary/10 transition-colors group"
-                  >
-                    <Mail className="w-6 h-6 text-primary mr-4 group-hover:scale-110 transition-transform" />
-                    <div>
-                      <div className="font-semibold">Email</div>
-                      <div className="text-muted-foreground">sahibaharoon.mec@gmail.com</div>
-                    </div>
-                  </a>
-
-                  <a 
-                    href="tel:+918078472275"
-                    className="flex items-center p-4 bg-secondary/50 rounded-lg hover:bg-primary/10 transition-colors group"
-                  >
-                    <Phone className="w-6 h-6 text-primary mr-4 group-hover:scale-110 transition-transform" />
-                    <div>
-                      <div className="font-semibold">Phone</div>
-                      <div className="text-muted-foreground">+91 8078472275</div>
-                    </div>
-                  </a>
-
-                  <div className="flex items-center p-4 bg-secondary/50 rounded-lg">
-                    <MapPin className="w-6 h-6 text-primary mr-4" />
-                    <div>
-                      <div className="font-semibold">Location</div>
-                      <div className="text-muted-foreground">Kochi, Kerala, India </div>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Social Links */}
-                <div className="pt-6 border-t border-border">
-                  <h3 className="text-xl font-bold mb-4 text-gradient-ocean">Follow My Digital Waves 🌊</h3>
-                  <div className="flex space-x-4">
-                    <Button 
-                      variant="float" 
-                      size="icon" 
-                      className="hover:scale-110 transition-transform"
-                      onClick={() => window.open('https://www.instagram.com/sahibbaaa?igsh=MXAxeTQyaDEwOHlyMw%3D%3D&utm_source=qr', '_blank')}
-                    >
-                      <Instagram className="w-5 h-5" />
-                    </Button>
-                    <Button 
-                      variant="float" 
-                      size="icon" 
-                      className="hover:scale-110 transition-transform"
-                      onClick={() => window.open('https://www.linkedin.com/in/sahibaharoon', '_blank')}
-                    >
-                      <Linkedin className="w-5 h-5" />
-                    </Button>
-                    <Button 
-                      variant="float" 
-                      size="icon" 
-                      className="hover:scale-110 transition-transform"
-                      onClick={() => window.open('https://github.com/sahibaharoon', '_blank')}
-                    >
-                      <Github className="w-5 h-5" />
-                    </Button>
-                  </div>
-                </div>
-
-              </CardContent>
-            </Card>
+  
+  {/* Profile Image */}
+  <Card className="wave-glow flex justify-center items-center p-6">
+    <img 
+      src={sahiba}
+      alt="Sahiba Haroon" 
+      className="w-full h-auto"></img>
+  </Card>
+            
           </div>
 
           {/* Contact Form */}
@@ -132,9 +67,7 @@ const ContactSection = () => {
               <CardTitle className="text-2xl text-gradient-ocean">Send a Message 💌</CardTitle>
             </CardHeader>
             <CardContent>
-              <form 
-  action="https://formsubmit.co/sahibaharoon.mec@gmail.com"
-  method="POST"
+              <form action="https://formsubmit.co/70199d14090f08e79934d3576a0287ba" method="POST"
   className="space-y-6"
 >
   <input type="hidden" name="_captcha" value="false" />

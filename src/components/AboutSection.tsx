@@ -85,9 +85,8 @@ const AboutSection = () => {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4 text-gradient-ocean">My Journey</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  My journey started as a medical aspirant who found herself enchanted by the world of engineering 
-                  and coding. What began as curiosity has blossomed into a love for creating innovative 
-                  digital solutions.
+                  My journey started as a medical aspirant who found herself in the world of engineering 
+                  and coding. What began as curiosity turned into a love for building web apps.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   I love making my own little projects - each one teaching me something new about technology 
@@ -96,6 +95,26 @@ const AboutSection = () => {
                 </p>
               </CardContent>
             </Card>
+              <Card className="wave-glow">
+    <CardContent className="p-8">
+      <h3 className="text-2xl font-bold mb-4 text-gradient-ocean">Education</h3>
+      <ul className="space-y-4 text-muted-foreground">
+        <li>
+          <p className="font-semibold text-primary">Govt. Model Engineering College – 2026</p>
+          <p>B.Tech in Computer Science, KTU – CGPA: 9.14</p>
+        </li>
+        <li>
+          <p className="font-semibold text-primary">Gregorian Public School – 2022</p>
+          <p>CBSE, Class 12 – 96.6%</p>
+        </li>
+        <li>
+          <p className="font-semibold text-primary">Gregorian Public School – 2020</p>
+          <p>CBSE, Class 10 – 96.4%</p>
+        </li>
+      </ul>
+    </CardContent>
+  </Card>
+            
 
             {/* Beach Lover */}
             <Card className="bg-gradient-to-br from-accent/10 to-orange-100/50 border-accent/20 wave-glow">
@@ -105,7 +124,7 @@ const AboutSection = () => {
                   <span className="text-gradient-sunset">Travel Enthusiast</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  When I'm not coding, you'll find me dreaming about or exploring beautiful beaches 🏖️
+                  In my free time, you'll find me dreaming about or exploring beautiful beaches 🏖️
                    I'm passionate about traveling, discovering new cultures, 
                   and meeting new people. There's something 
                   magical about the sound of waves and the feeling of sand between your toes that 
@@ -113,6 +132,7 @@ const AboutSection = () => {
                 </p>
               </CardContent>
             </Card>
+            
           </div>
 
           {/* Right Column - Skills & Achievements */}
