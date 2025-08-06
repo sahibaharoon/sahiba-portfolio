@@ -7,8 +7,7 @@ This is my **personal portfolio website**, designed and developed to showcase my
 - Skills 💻
 - Contact details 📬
 
-## 🚀 Live Demo
-Check out the live version here: [https://sahiba-portfolio-eta.vercel.app](https://sahiba-portfolio-eta.vercel.app)
+
 
 ## 🛠️ Built With
 - **React.js** ⚛️
