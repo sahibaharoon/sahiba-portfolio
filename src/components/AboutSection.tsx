@@ -12,19 +12,14 @@ const AboutSection = () => {
   };
 
   const achievements = [
-    '🌊 Publicity Head for EXCEL 2025 Techno-Managerial Fest',
-    '📜 Licensee for TEDxMEC 2026',
-    '🎤 Speaker Head at TEDxMEC 2024',
-    '✨ Curation Head of TEDxMEC 2025',
-    '💼 Completed IBM SkillsBuild Internship Program'
+    'Publicity Head for EXCEL 2025 Techno-Managerial Fest',
+    'Licensee for TEDxMEC 2026',
+    'Speaker Head at TEDxMEC 2024',
+    'Curation Head of TEDxMEC 2025',
+    'Completed IBM SkillsBuild Internship Program'
   ];
 
   const socialAccounts = [
-    {
-      name: 'Model Engineering College Official Students Account',
-      handle: '@mec.ac.in',
-      url: 'https://www.instagram.com/mec.ac.in/profilecard/?igsh=MW55bHB4bjVkcXg5cQ=='
-    },
     {
       name: 'TEDxMEC Official Account',
       handle: '@tedxmec',
@@ -124,11 +119,8 @@ const AboutSection = () => {
                   <span className="text-gradient-sunset">Travel Enthusiast</span>
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  In my free time, you'll find me dreaming about or exploring beautiful beaches 🏖️
-                   I'm passionate about traveling, discovering new cultures, 
-                  and meeting new people. There's something 
-                  magical about the sound of waves and the feeling of sand between your toes that 
-                  brings peace to my mind.
+                   I'm really passionate about traveling, discovering new cultures, 
+                  and meeting new people.
                 </p>
               </CardContent>
             </Card>

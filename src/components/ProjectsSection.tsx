@@ -9,6 +9,8 @@ import mathgptProject from '@/assets/mathgpt-project.png';
 import pdfsumm from '@/assets/pdfsummariser.png';
 import kra from '@/assets/kramig.png';
 import whatsapp from '@/assets/whatsapp.png';
+import billsplit from '@/assets/billsplit.png';
+import dashboard from '@/assets/dashboard.png';
 
 const ProjectsSection = () => {
   const [activeFilter, setActiveFilter] = useState('All');
@@ -21,28 +23,27 @@ const ProjectsSection = () => {
       category: 'Full-Stack Development',
       image: mathgptProject,
       technologies: ['JavaScript', 'HTML', 'CSS', 'React JS'],
-      features: [
-        'Handwritten math problem recognition',
-        'Step-by-step solution generation',
-        'Interactive user interface',
-        'Real-time problem solving'
-      ],
       demoLink: 'https://mathgptproject.onrender.com/',
       codeLink: 'https://github.com/sahibaharoon/mathgpt-miniproject-s6'
     },
+    ,
     {
       id: 2,
+      title: 'BillSplit',
+      description: 'Developed a modern web application to track, split, and settle shared expenses. Implemented secure user authentication with Supabase Auth, smart settlement algorithmn to minimise transactions',
+      category: 'Full Stack Development',
+      image: billsplit,
+      technologies: ['React.js', 'Supabase', 'Tailwind CSS'],
+      demoLink: 'https://bill-split-sand.vercel.app',
+      codeLink: 'https://github.com/sahibaharoon/BillSplit'
+    },
+    {
+      id: 7,
       title: 'Smart PDF Summarizer',
       description: 'An AI-based web application that allows users to upload long PDF documents and receive a summary along with key topics using Python, HuggingFace, StreamLit, and PyMuPDF.',
       category: 'AI/Machine Learning',
       image: pdfsumm,
       technologies: ['Python', 'HuggingFace', 'StreamLit', 'PyMuPDF'],
-      features: [
-        'PDF document processing',
-        'AI-powered text summarization',
-        'Key topic extraction',
-        'Cloud deployment ready'
-      ],
       demoLink: 'https://pdfsummarizer-sahiba.streamlit.app',
       codeLink: 'https://github.com/sahibaharoon/pdfsummarizer'
     },
@@ -53,12 +54,6 @@ const ProjectsSection = () => {
       category: 'AI/Machine Learning',
       image: kra,
       technologies: ['Python', 'Flask', 'Together AI API', 'HTML', 'CSS', 'JavaScript', 'SQLite'],
-      features: [
-        'Natural language processing',
-        'Conversational AI responses',
-        'User session management',
-        'Database integration'
-      ],
       highlight: "Hi! I'm Karmig 🐼",
       demoLink: 'https://sahibas-chatbot.onrender.com',
       codeLink: 'https://github.com/sahibaharoon/sahibas-chatbot'
@@ -70,12 +65,6 @@ const ProjectsSection = () => {
       category: 'Back-End Development',
       image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=400&h=300&fit=crop&crop=center',
       technologies: ['JavaScript', 'React.js', 'Node.js', 'MySQL'],
-      features: [
-        'User authentication system',
-        'Room booking management',
-        'Backend API development',
-        'Database management'
-      ],
       codeLink: 'https://github.com/sahibaharoon/HOTEL-MANAGEMENT-DBMS'
     },
     {
@@ -85,12 +74,6 @@ const ProjectsSection = () => {
       category: 'Front End Development',
       image: ecommerceProject,
       technologies: ['HTML', 'CSS', 'JavaScript', 'localStorage'],
-      features: [
-        'Responsive design',
-        'Shopping cart functionality',
-        'Order management',
-        'Local storage integration'
-      ],
       demoLink: 'https://ecommerce-site-1-7ltp.onrender.com',
       codeLink: 'https://github.com/sahibaharoon/ecommerce-site'
     },
@@ -98,17 +81,21 @@ const ProjectsSection = () => {
       id: 6,
       title: 'WhatsApp Chat Analyzer',
       description: 'A web application built with HTML, CSS, and JavaScript that analyzes WhatsApp chat exports to provide insights and statistics about conversations.',
-      category: 'Front End Development',
+      category: 'Full-Stack Development',
       image: whatsapp,
       technologies: ['HTML', 'CSS', 'JavaScript'],
-      features: [
-        'Chat export processing',
-        'Statistical analysis',
-        'Visual data representation',
-        'Interactive insights'
-      ],
       demoLink: 'https://whatsapp-analyser-one.vercel.app',
       codeLink: 'https://github.com/sahibaharoon/whatsapp-analyser'
+    },
+    {
+      id: 8,
+      title: 'E-commerce Dashboard',
+      description: 'An interactive Business Intelligence (BI) dashboard designed to help business stakeholders understand the connection between marketing activities and business outcomes for an e-commerce brand.',
+      category: 'Front End Development',
+      image: dashboard,
+      technologies: [ 'Python','CSS', 'Streamlit'],
+      demoLink: 'https://e-commerce-dashboard-4t4m.onrender.com',
+      codeLink: 'https://github.com/sahibaharoon/e-commerce-dashboard'
     }
   ];
 
@@ -123,10 +110,10 @@ const ProjectsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            <span className="text-gradient-ocean">Favourite Projects</span>
+            <span className="text-gradient-ocean">My Projects</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
-            Dive into my digital ocean of projects! 🌊 Each one crafted with love.
+            Dive into my projects!
           </p>
 
           {/* Filter Buttons */}
