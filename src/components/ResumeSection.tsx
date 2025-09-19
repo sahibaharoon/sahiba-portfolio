@@ -23,8 +23,7 @@ const ResumeSection = () => {
             <CardHeader>
               <CardTitle className="text-2xl text-gradient-ocean">Let's Connect</CardTitle>
               <p className="text-muted-foreground">
-                Whether you have a project in mind, want to collaborate, or just want to say hello, 
-                I'd love to hear from you! 🏖️
+                Say Helloo
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
@@ -63,7 +62,7 @@ const ResumeSection = () => {
 
               {/* Social Links */}
               <div className="pt-6 border-t border-border">
-                <h3 className="text-xl font-bold mb-4 text-gradient-ocean">Follow My Digital Waves 🌊</h3>
+                <h3 className="text-xl font-bold mb-4 text-gradient-ocean">Follow My Digital Platforms</h3>
                 <div className="flex space-x-4">
                   <Button 
                     variant="float" 
@@ -99,7 +98,7 @@ const ResumeSection = () => {
             <CardHeader>
               <CardTitle className="text-xl text-gradient-ocean">My Resume</CardTitle>
               <p className="text-muted-foreground">
-                Download or view my complete professional resume
+                Download or view my resume
               </p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -109,7 +108,7 @@ const ResumeSection = () => {
                 size="lg"
                 onClick={() => {
                   const link = document.createElement('a');
-                  link.href = 'https://drive.google.com/uc?export=download&id=1OS5jjjVubRbUdpUi5CesXjZ6gBRTrHVX';
+                  link.href = 'https://drive.google.com/file/d/1Jlh1jsYgFP-SLqyJMQXcsv98M47eqeKy/view?usp=sharing';
                   link.download = 'Sahiba_Haroon_Resume.pdf';
                   document.body.appendChild(link);
                   link.click();
@@ -123,7 +122,7 @@ const ResumeSection = () => {
                 variant="outline" 
                 className="w-full" 
                 size="lg"
-                onClick={() => window.open('https://drive.google.com/file/d/1OS5jjjVubRbUdpUi5CesXjZ6gBRTrHVX/view?usp=sharing', '_blank')}
+                onClick={() => window.open('https://drive.google.com/file/d/1Jlh1jsYgFP-SLqyJMQXcsv98M47eqeKy/view?usp=sharing', '_blank')}
               >
                 <Eye className="w-5 h-5 mr-2" />
                 View Online
