@@ -28,7 +28,7 @@ const ContactSection = () => {
     e.preventDefault();
     // Here you would typically send the form data to your backend
     toast({
-      title: "Message sent! 🌊",
+      title: "Message sent! ",
       description: "Thank you for reaching out! I'll get back to you as soon as i can!",
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -41,10 +41,6 @@ const ContactSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="text-gradient-ocean">Get In Touch</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Let's create something fun together!I'm always open to discussing new opportunities, 
-            collaborations, or just having a chat.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
@@ -116,7 +112,7 @@ const ContactSection = () => {
       id="message"
       name="message"
       required
-      placeholder="Tell me about your project, idea, or just say hello! 🌊"
+      placeholder="Say Hello"
       rows={6}
       className="focus:ring-primary focus:border-primary resize-none"
     />
@@ -129,7 +125,7 @@ const ContactSection = () => {
     className="w-full"
   >
     <Send className="w-5 h-5 mr-2" />
-    Send Message 🌊
+    Send Message 
   </Button>
 </form>
             </CardContent>
